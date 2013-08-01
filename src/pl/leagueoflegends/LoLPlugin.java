@@ -8,7 +8,14 @@ public class LoLPlugin extends JavaPlugin{
   
 	public void onEnable(){
 		
+		//config
+		Config.registerConfig("config", "config.yml", this);
+		Config.registerConfig("language", "languages.yml", this);
 		
+		//languages
+		Lang.loadMessages(Config.getConfig("language"));
+		
+		//Success message
 		logInfo("Poprawnie zaladowany!");
 		logInfo("by regzand & adrenator & Dzikoysk @ Bukkit.pl");
 	}
