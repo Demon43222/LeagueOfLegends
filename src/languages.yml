@@ -1,3 +1,16 @@
+#messages that will be displayed when an error occurred during executing a command
+error:
+    #
+    unknown: '&4Wystapil nieznany blad!'
+    #
+    playerOnly: '&4Ta komenda moze byc uzywana tylko przez graczy!'
+    # 0: player name
+    playerOffline: '&4Nie ma tekiego gracza na serwerze!'
+    #
+    permission: '&4Nie masz do tego prawa!'
+    # 0: right syntax
+    wrongSyntax: '&4Bledna skladnia! %0'
+
 #message that will be displayed after typing main command with incorrect subcommand
 help:
     - '&6-----------------------------------------------------'
