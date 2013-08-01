@@ -18,7 +18,7 @@ public class CmdLol extends RCommand{
 	@Override
 	public boolean execute(CommandSender s, String label, String[] args) throws RCommandException {
 		
-		List<String> list = Config.getConfig("template").getStringList("help");
+		List<String> list = Config.getConfig("language").getStringList("help");
 		String[] array = new String[list.size()];
 		for(int i = 0; i < list.size(); i++){
 			array[i] = ChatColor.translateAlternateColorCodes('&', list.get(i));
