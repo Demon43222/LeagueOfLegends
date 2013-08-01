@@ -16,3 +16,6 @@ help:
     - '&6-----------------------------------------------------'
     - '&6/lol &a- glowna koemnda pluginu'
     - '&6-----------------------------------------------------'
+#list of subcommands aliases
+commands:
+    admin: admin
