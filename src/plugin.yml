@@ -1,0 +1,7 @@
+name: LeagueOfLegends
+main: pl.leagueoflegends.LoLPlugin
+version: 0.1
+
+authors: ['regzand', 'adrenator', 'dzikoysk']
+
+prefix: [BETA]
