@@ -7,6 +7,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import pl.leagueoflegends.cmd.CmdLol;
+import pl.leagueoflegends.cmd.CmdLolAdmin;
 import pl.leagueoflegends.cmd.engine.RCommand;
 import pl.leagueoflegends.cmd.engine.RCommandArgsException;
 import pl.leagueoflegends.cmd.engine.RCommandException;
@@ -29,6 +30,8 @@ public class LoLPlugin extends JavaPlugin{
 		
 		//commands
 		lolCommand = new CmdLol();
+		RCommand lolAdmin = new CmdLolAdmin();
+		lolCommand.addSubCommands(lolAdmin);
 		
 		//Success message
 		logInfo("Poprawnie zaladowany!");
