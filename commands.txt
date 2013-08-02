@@ -1,4 +1,3 @@
-
 /lol join <arena> |P|
 
 	Permission:
@@ -37,26 +36,39 @@
     		lol.user.stat.other
     		lol.admin
 
-/lol stat reset <nick>
+/lol stat reset |P|
 
 	Permission:
-		lol.user.* - tylko dla siebie
-		lol.user.stat.reset - tylko dla siebie
-
-
-/lol admin stat reset <nick>	
-
-	Permission:
-		lol.admin
-		lol.admin.stat
 		lol.*
+		lol.user.*
+		lol.user.stat.*
+		lol.user.stat.reset
+		lol.admin
 
-/lol admin building 
 
-    opis: Budowanie na terenie aren
-    
+/lol admin stat <nick> |P&C|	
+
+	Permission:
+		lol.*
+		lol.admin.*
+		lol.admin.stat
+
+/lol admin stat reset <nick> |P&C|	
+
+	Permission:
+		lol.*
+		lol.admin.*
+		lol.admin.stat.*
+		lol.admin.stat.reset
+
+/lol admin building |P|
+
+	Opis:
+		Budowanie na terenie aren
+		
 	Permission:
     		lol.*
+    		lol.admin.*
     		lol.admin.building
  
 /lol admin kick <nick>
@@ -115,4 +127,65 @@
 		lol.admin.enable
 		lol.admin.enable.<arena>
  
- 
+/lol arena info <arena>
+
+	Permission:
+		lol.*
+		lol.admin
+		lol.user.*
+		lol.user.arenainfo
+		
+/lol arena stop <arena>
+
+	Permission:
+		lol.*
+		lol.admin
+		lol.admin.stop
+		lol.admin.stop.<arena>
+
+/lol arena restart <arena>
+
+	Permission:
+		lol.*
+	 	lol.admin
+	 	lol.admin.restart
+	 	lol.admin.restart.<arena>
+	 	
+/lol reload
+
+	Permission:
+	lol.*
+	lol.admin.reload
+	
+/lol disable
+
+	Opis: Plugin zostaje wyłączony.
+	
+	Permission:
+		lol.*
+
+/lol teleport <arena>
+
+	Permission:
+		lol.*
+		lol.admin.tp
+		lol.admin.tp.<arena>
+		lol.admin
+		
+/lol arena select <arena>
+
+		Permission:
+		lol.*
+		lol.admin
+		lol.admin.select.<arena>
+
+/lol arena setlobby <team>
+
+		Permission:
+		lol.*
+		lol.admin
+		lol.admin.setlobby
+		
+
+	
+
