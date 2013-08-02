@@ -12,15 +12,25 @@ public abstract class Champion {
 	
 	private final String id;
 	private final CharacterType type;
+	private int live;
+	private final int maxLive;
 	private List<Ability> skills = new ArrayList<Ability>();
 	
-	public Champion(String id, CharacterType type){
+	public Champion(String id, CharacterType type, int maxLive){
 		this.id = id;
 		this.type = type;
+		this.maxLive = maxLive;
+		this.live = maxLive;
 	}
 
 	public String getId(){
 		return id;
+	}
+	public int getLive(){
+		return live;
+	}
+	public int getMaxLive(){
+		return maxLive;
 	}
 	public CharacterType getType(){
 		return type;
@@ -34,11 +44,20 @@ public abstract class Champion {
 	public String getDescription(){
 		return Config.getConfig("champions").getString(id+".description", "");
 	}
+	public boolean changeLive(int change){
+		live += change;
+		if(live <= 0){
+			onDeath();
+			return false;
+		}
+		return true;
+	}
 	
 	
 	
 	// ABSTRACT //
 	public abstract ItemStack getAttribute();
+	public abstract void onDeath();
 	
 	// PROTECTED //
 	protected void addSkill(Ability s){
