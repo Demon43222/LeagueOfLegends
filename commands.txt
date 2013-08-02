@@ -46,6 +46,7 @@
 
 	Permission:
 		lol.admin
+		lol.admin.stat
 		lol.*
 
 /lol admin building 
@@ -56,14 +57,15 @@
     		lol.*
     		lol.admin.building
  
-/lol kick <nick>
+/lol admin kick <nick>
 
 	Permission:
 		lol.*
 		lol.admin
 		lol.admin.kick
+		lol.admin.kick.<arena>
 	
-/lol ban <nick>
+/lol admin ban <nick> <arena>  ( bez arena na wszytskich)
 
     opis: banuje na arenach
     
@@ -71,14 +73,44 @@
    		lol.*
     		lol.admin
     		lol.admin.ban
+    		lol.admin.ban.<arena>
    
-/lol unban <nick>
+/lol admin unban <nick> <arena>
    
 	Permission:
      		lol.*
      		lol.admin
      		lol.admin.unban
+     		lol.admin.unban.<arena>
 
- /lol create <nazwa>
+ /lol admin create <arena>
+ 
+	Permission:
+		lol.*
+		lol.admin
+		lol.admin.create
+		
+/lol admin delete <arena>
+	
+	Permission:
+		lol.*
+		lol.admin
+		lol.admin.delete
+		
+/lol admin disable <arena>
+
+	Permission:
+		lol.*
+		lol.admin
+		lol.admin.disable
+		lol.admin.disable.<arena>
+		
+/lol admin enable <arena>
+
+	Permission:
+		lol.*
+		lol.admin
+		lol.admin.enable
+		lol.admin.enable.<arena>
  
  
