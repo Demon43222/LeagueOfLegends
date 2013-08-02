@@ -30,10 +30,10 @@
 /lol stat <user>
      
 	Permission:
-    	lol.user.stat
-    	lol.user.*
-    	lol.admin
-    	lol.*
+    		lol.user.stat
+    		lol.user.*
+    		lol.admin
+    		lol.*
 
 /lol stat reset <nick>
 
@@ -53,8 +53,8 @@
     opis: Budowanie na terenie aren
     
 	Permission:
-    	lol.*
-    	lol.admin.building
+    		lol.*
+    		lol.admin.building
  
 /lol kick <nick>
 
@@ -68,16 +68,16 @@
     opis: banuje na arenach
     
 	Permission:
-   	lol.*
-    	lol.admin
-    	lol.admin.ban
+   		lol.*
+    		lol.admin
+    		lol.admin.ban
    
 /lol unban <nick>
    
 	Permission:
-     	lol.*
-     	lol.admin
-     	lol.admin.unban
+     		lol.*
+     		lol.admin
+     		lol.admin.unban
 
  /lol create <nazwa>
  
