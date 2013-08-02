@@ -1,47 +1,44 @@
-
-
+Użytkownik:
 /lol join <arena>
 
-	Permission:
-  		lol.user.*
-  		lol.join.*
-  		lol.join.<arena>
+  Permission:
   		lol.*
-  		lol.admin
+  		lol.user.*
+  		lol.user.join.*
+  		lol.user.join.<arena>
   
 /lol leave
 
 	Permission:
+  		lol.*
 		lol.user.*
-		lol.leave
-		lol.*
-		lol.admin
+		lol.user.leave
 		
 /lol spectate <arena>
 
-	Opis:
-		Jest nie widoczny dla grajacych na arenie, moze latac i patrzec.
-		
+	opis:
+		Jest nie widoczny dla grających na arenie, może latać i patrzeć.
 	Permission:
-		lol.user.spectate
-		lol.*
-		lol.admin
+  		lol.*
+  		lol.user.*
+		lol.user.spectate.*
+		lol.user.spectate.<arena>
 
-/lol stat <user>
+/lol stat [user]
      
-    Permission:
-    	lol.user.stat
-    	lol.user.*
-    	lol.admin
-    	lol.*
+	Permission:
+		lol.*
+		lol.user.*
+		lol.user.stat
+		lol.user.stat.other
 
-/lol stat reset <user>
+/lol stat reset
 
 	Permission:
-		lol.user.* - tylko dla siebie
-		lol.user.stat.reset - tylko dla siebie
-		lol.admin
 		lol.*
+		lol.user.*
+		lol.user.stat.*
+		lol.user.stat.reset
 	
 
 /lol building 
@@ -49,32 +46,8 @@
     opis: Budowanie na terenie aren
     
     Permission:
-    	lol.*
-    	lol.admin.building
- 
-/lol kick <nick>
-
-	permission:
-		lol.*
-		lol.admin
-		lol.admin.kick
-	
-/lol ban <nick>
-
-    opis: banuje na arenach
+    lol.*
+    lol.admin.building
     
-    permission:
-   		lol.*
-    	lol.admin
-    	lol.admin.ban
-   
-/lol unban <nick>
-   
-     Permission:
-     	lol.*
-     	lol.admin
-     	lol.admin.unban
 
- /lol create <nazwa>
- 
  
