@@ -122,7 +122,7 @@
 		lol.player.*
 		lol.player.arenainfo
 		
-/lol arena stop <arena>
+/lol arena forcestop <arena>
 
 	Permission:
 		lol.*
@@ -216,6 +216,41 @@
 		lol.*
 		lol.admin
 		lol.admin.champions.disable
+
+/lol alive
+
+	Opis: Sprawdza kto nadal żyje na arenie
+	
+	Permission:
+		lol.*
+		lol.admin
+		lol.user.*
+		lol.user.alive
+		
+/lol chat 
+
+	OPis: Zmienia chat na chat areny
+	
+	Permission:
+		lol.*
+		lol.admin
+		lol.user.*
+		lol.user.chattoogle
+		
+/lol version
+
+	Permission:
+		lol.*
+		lol.admin
+		lol.user.*
+		lol.user.version
+		
+/lol shop
+
+	OPis: otwiera eq ze sklepem, np: miecz, opis itemka: + 50 do ataku.
+	
+	Do obgadania, permission brak chwilowo.
+	
 
 		
 	
