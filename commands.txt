@@ -1,39 +1,41 @@
 
-
-/lol join <arena>
+/lol join <arena> |P|
 
 	Permission:
-  		lol.user.*
-  		lol.join.*
-  		lol.join.<arena>
   		lol.*
+  		lol.user.*
+  		lol.user.join.*
+  		lol.user.join.<arena>
   		lol.admin
   
-/lol leave
+/lol leave |P|
 
 	Permission:
-		lol.user.*
-		lol.leave
 		lol.*
+		lol.user.*
+		lol.user.leave
 		lol.admin
 		
-/lol spectate <arena>
+/lol spectate <arena> |P|
 
 	Opis:
 		Jest nie widoczny dla grajacych na arenie, moze latac i patrzec.
 		
 	Permission:
-		lol.user.spectate
 		lol.*
+		lol.user.*
+		lol.user.spectate.*
+		lol.user.spectate.<arena>
 		lol.admin
 
-/lol stat <user>
+/lol stat [user] |P&C|
      
 	Permission:
-    		lol.user.stat
-    		lol.user.*
-    		lol.admin
     		lol.*
+    		lol.user.*
+    		lol.user.stat
+    		lol.user.stat.other
+    		lol.admin
 
 /lol stat reset <nick>
 
