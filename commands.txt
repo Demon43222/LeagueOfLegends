@@ -2,17 +2,17 @@
 
 	Permission:
   		lol.*
-  		lol.user.*
-  		lol.user.join.*
-  		lol.user.join.<arena>
+  		lol.player.*
+  		lol.player.join.*
+  		lol.player.join.<arena>
   		lol.admin
   
 /lol leave |P|
 
 	Permission:
 		lol.*
-		lol.user.*
-		lol.user.leave
+		lol.player.*
+		lol.player.leave
 		lol.admin
 		
 /lol spectate <arena> |P|
@@ -22,53 +22,40 @@
 		
 	Permission:
 		lol.*
-		lol.user.*
-		lol.user.spectate.*
-		lol.user.spectate.<arena>
+		lol.player.*
+		lol.player.spectate.*
+		lol.player.spectate.<arena>
 		lol.admin
 
-/lol stat [user] |P&C|
+/lol stat [player] |P&C|
      
 	Permission:
     		lol.*
-    		lol.user.*
-    		lol.user.stat
-    		lol.user.stat.other
+    		lol.player.*
+    		lol.player.stat
+    		lol.player.stat.other
     		lol.admin
 
-/lol stat reset |P|
+/lol stat reset <nick>
 
 	Permission:
-		lol.*
-		lol.user.*
-		lol.user.stat.*
-		lol.user.stat.reset
+		lol.player.* - tylko dla siebie
+		lol.player.stat.reset - tylko dla siebie
+
+
+/lol admin stat reset <nick>	
+
+	Permission:
 		lol.admin
-
-
-/lol admin stat <nick> |P&C|	
-
-	Permission:
-		lol.*
-		lol.admin.*
 		lol.admin.stat
-
-/lol admin stat reset <nick> |P&C|	
-
-	Permission:
 		lol.*
-		lol.admin.*
-		lol.admin.stat.*
-		lol.admin.stat.reset
 
-/lol admin building |P|
+/lol admin building 
 
-	Opis:
-		Budowanie na terenie aren
-		
+    opis: Budowanie na terenie aren
+    
 	Permission:
     		lol.*
-    		lol.admin.*
     		lol.admin.building
  
 /lol admin kick <nick>
@@ -132,10 +119,10 @@
 	Permission:
 		lol.*
 		lol.admin
-		lol.user.*
-		lol.user.arenainfo
+		lol.player.*
+		lol.player.arenainfo
 		
-/lol arena stop <arena>
+/lol arena forcestop <arena>
 
 	Permission:
 		lol.*
@@ -154,8 +141,8 @@
 /lol reload
 
 	Permission:
-	lol.*
-	lol.admin.reload
+		lol.*
+		lol.admin.reload
 	
 /lol disable
 
@@ -174,18 +161,97 @@
 		
 /lol arena select <arena>
 
-		Permission:
+	Permission:
 		lol.*
 		lol.admin
 		lol.admin.select.<arena>
 
 /lol arena setlobby <team>
 
-		Permission:
+	Permission:
 		lol.*
 		lol.admin
 		lol.admin.setlobby
 		
+/lol arena setspawnpoints <team>
 
+	Permission:
+		lol.*
+		lol.admin
+		lol.admin.setspawnpoints
+		
+/lol arena setregion
+
+	Opis: Zaznaczamy region areny - nie mozna go edytowac.
+	
+	Permission:
+		lol.*
+		lol.admin
+		lol.admin.setregion
+		
+/lol arena showregion
+		
+	Opis: Zaznacza np welna region areny, expand jest "vert".
+	
+	Permission:
+		lol.*
+		lol.admin
+		lol.admin.showregion
+
+/lol champions
+
+	Opis: Pokazuje champion'ów(wraz z mozliwosciami), na zielono możliwych do wyboru, na czerwono nie.
+	
+	Permission:
+	 	lol.*
+	 	lol.admin
+	 	lol.player.*
+	 	lol.player.champions
+
+/lol champions disable <champion>
+
+	Opis: Blokuje mozliwosc wyboru championa w lobby
+	
+	Permission:
+		lol.*
+		lol.admin
+		lol.admin.champions.disable
+
+/lol alive
+
+	Opis: Sprawdza kto nadal żyje na arenie
+	
+	Permission:
+		lol.*
+		lol.admin
+		lol.user.*
+		lol.user.alive
+		
+/lol chat 
+
+	OPis: Zmienia chat na chat areny
+	
+	Permission:
+		lol.*
+		lol.admin
+		lol.user.*
+		lol.user.chattoogle
+		
+/lol version
+
+	Permission:
+		lol.*
+		lol.admin
+		lol.user.*
+		lol.user.version
+		
+/lol shop
+
+	OPis: otwiera eq ze sklepem, np: miecz, opis itemka: + 50 do ataku.
+	
+	Do obgadania, permission brak chwilowo.
+	
+
+		
 	
 
