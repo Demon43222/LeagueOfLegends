@@ -2,6 +2,8 @@ package pl.leagueoflegends.characters;
 
 import org.bukkit.inventory.ItemStack;
 
+import pl.leagueoflegends.skills.Skill;
+
 public interface Character {
 	
 	public String getName();

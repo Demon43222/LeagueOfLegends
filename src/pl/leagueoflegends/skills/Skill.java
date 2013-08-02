@@ -1,4 +1,4 @@
-package pl.leagueoflegends.characters;
+package pl.leagueoflegends.skills;
 
 public abstract class Skill {
 	
