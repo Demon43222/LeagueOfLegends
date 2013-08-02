@@ -4,14 +4,14 @@ import java.util.Date;
 
 import pl.leagueoflegends.Config;
 
-public abstract class Skill {
+public abstract class Ability {
 	
 	private String id;
 	private int level;
 	private int maxLevel;
 	private long lastUsed;
 	
-	public Skill(String id, int startLvl, int maxLvl){
+	public Ability(String id, int startLvl, int maxLvl){
 		this.id = id;
 		level = startLvl;
 		maxLevel = maxLvl;

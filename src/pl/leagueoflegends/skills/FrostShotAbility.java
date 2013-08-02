@@ -1,9 +1,9 @@
 package pl.leagueoflegends.skills;
 
 
-public class FrostShotSkill extends Skill{
+public class FrostShotAbility extends Ability{
 	
-	public FrostShotSkill(){
+	public FrostShotAbility(){
 		super("frostShot", 0, 1);
 	}
 

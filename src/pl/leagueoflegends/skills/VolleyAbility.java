@@ -1,11 +1,11 @@
 package pl.leagueoflegends.skills;
 
 
-public class VolleySkill extends Skill {
+public class VolleyAbility extends Ability {
 
 	private static final int[] cooldown = new int[]{0,16,13,10,7,4};
 	
-	public VolleySkill() {
+	public VolleyAbility() {
 		super("volley", 0 , 5);
 	}
 
