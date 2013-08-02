@@ -11,6 +11,7 @@ import pl.leagueoflegends.skills.Ability;
 public abstract class Champion {
 	
 	private final String id;
+	private final String name;
 	private final CharacterType type;
 	private int live;
 	private int maxLive;
@@ -19,8 +20,9 @@ public abstract class Champion {
 	private float speed;
 	private List<Ability> skills = new ArrayList<Ability>();
 	
-	public Champion(String id, CharacterType type, int maxLive, int maxMana, float speed){
+	public Champion(String id, String name, CharacterType type, int maxLive, int maxMana, float speed){
 		this.id = id;
+		this.name = name;
 		this.type = type;
 		this.maxLive = maxLive;
 		this.live = maxLive;
@@ -54,7 +56,7 @@ public abstract class Champion {
 		return (Ability[])skills.toArray();
 	}
 	public String getName(){
-		return Config.getConfig("champions").getString(id+".name", id);
+		return name;
 	}
 	public String getDescription(){
 		return Config.getConfig("champions").getString(id+".description", "");
