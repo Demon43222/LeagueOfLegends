@@ -5,14 +5,14 @@ import java.util.List;
 
 import org.bukkit.inventory.ItemStack;
 
-import pl.leagueoflegends.skills.Skill;
+import pl.leagueoflegends.skills.Ability;
 
 public abstract class Champion {
 	
-	private List<Skill> skills = new ArrayList<Skill>();
+	private List<Ability> skills = new ArrayList<Ability>();
 	
-	public Skill[] getSkills(){
-		return (Skill[])skills.toArray();
+	public Ability[] getSkills(){
+		return (Ability[])skills.toArray();
 	}
 	
 	
@@ -23,7 +23,7 @@ public abstract class Champion {
 	public abstract CharacterType getType();
 	
 	// PROTECTED //
-	protected void addSkill(Skill s){
+	protected void addSkill(Ability s){
 		skills.add(s);
 	}
 	
