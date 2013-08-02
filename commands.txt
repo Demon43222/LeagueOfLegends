@@ -1,0 +1,55 @@
+
+Użytkownik:
+/lol join <arena>
+
+  Permission:
+  		lol.user.*
+  		lol.join.*
+  		lol.join.nrareny
+  		lol.*
+  		lol.admin
+  
+/lol leave
+
+	Permission:
+		lol.user.*
+		lol.leave
+		lol.*
+		lo.admin
+		
+/lol spectate nrareny
+
+	opis:
+		Jest nie widoczny dla grających na arenie, może latać i patrzeć.
+	Permission:
+		lol.user.spectate
+		lol.*
+		lol.admin
+
+/lol stat <user>
+     
+    Permission:
+    lol.user.stat
+    lol.user.*
+    lol.admin
+    lol.*
+
+/lol stat reset <user>
+
+	Permission:
+	lol.user.* - tylko dla siebie
+	lol.user.stat.reset - tylko dla siebie
+	lol.admin
+	lol.*
+	
+
+/lol building 
+
+    opis: Budowanie na terenie aren
+    
+    Permission:
+    lol.*
+    lol.admin.building
+    
+
+ 
