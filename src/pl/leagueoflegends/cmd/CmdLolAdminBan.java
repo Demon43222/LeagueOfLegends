@@ -16,7 +16,7 @@ public class CmdLolAdminBan extends RCommand{
 	public boolean execute(CommandSender s, String label, String[] args)
 			throws RCommandException {
 	super.checkPermissions(s, "lol.admin.ban");
-	super.checkArguments(args, 1, false, "/"+label+" <nick>");
+	super.checkArguments(args, 1, true, "/"+label+" <nick>");
   //TODO 
 	super.checkArguments(args, 2, true, "/"+label+" <nick> + <arena>");
   //TODO
