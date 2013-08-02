@@ -20,7 +20,7 @@ public class CmdLolAdminKick extends RCommand {
 		
 		super.checkPermissions(s, "lol.admin.kick");
 		
-		Player p = super.checkPlayer(s);
+
 		
 		super.checkArguments(args, 1, true, "/"+label+" <nick>");
 		
