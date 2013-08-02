@@ -1,7 +1,7 @@
 package pl.leagueoflegends.skills;
 
 
-public class FrostShotAbility extends Ability{
+public class FrostShotAbility extends Ability{ //TODO to jest testowe, bedzie modyfikowane
 	
 	public FrostShotAbility(){
 		super("frostShot", 0, 1);
