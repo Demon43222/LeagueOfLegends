@@ -46,19 +46,29 @@
 		lol.admin
 
 
-/lol admin stat reset <nick>	
+/lol admin stat <nick> |P&C|	
 
 	Permission:
-		lol.admin
-		lol.admin.stat
 		lol.*
+		lol.admin.*
+		lol.admin.stat
 
-/lol admin building 
+/lol admin stat reset <nick> |P&C|	
 
-    opis: Budowanie na terenie aren
-    
+	Permission:
+		lol.*
+		lol.admin.*
+		lol.admin.stat.*
+		lol.admin.stat.reset
+
+/lol admin building |P|
+
+	Opis:
+		Budowanie na terenie aren
+		
 	Permission:
     		lol.*
+    		lol.admin.*
     		lol.admin.building
  
 /lol admin kick <nick>
