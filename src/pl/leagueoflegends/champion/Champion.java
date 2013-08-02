@@ -13,7 +13,9 @@ public abstract class Champion {
 	private final String id;
 	private final CharacterType type;
 	private int live;
-	private final int maxLive;
+	private int maxLive;
+	private int mana;
+	private int maxMana;
 	private List<Ability> skills = new ArrayList<Ability>();
 	
 	public Champion(String id, CharacterType type, int maxLive){
@@ -32,6 +34,12 @@ public abstract class Champion {
 	public int getMaxLive(){
 		return maxLive;
 	}
+	public int getMana(){
+		return mana;
+	}
+	public int getMaxMana(){
+		return maxMana;
+	}
 	public CharacterType getType(){
 		return type;
 	}
@@ -48,6 +56,14 @@ public abstract class Champion {
 		live += change;
 		if(live <= 0){
 			onDeath();
+			return false;
+		}
+		return true;
+	}
+	public boolean changeMana(int change){
+		mana += change;
+		if(mana < 0){
+			//nie ma wystarczajaco many
 			return false;
 		}
 		return true;
