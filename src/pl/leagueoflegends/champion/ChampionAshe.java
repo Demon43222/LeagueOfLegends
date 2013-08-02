@@ -9,7 +9,7 @@ import pl.leagueoflegends.skills.FrostShotAbility;
 import pl.leagueoflegends.skills.HawkshotAbility;
 import pl.leagueoflegends.skills.VolleyAbility;
 
-public class AsheChampion extends Champion{
+public class ChampionAshe extends Champion{
 	
 	private final static ItemStack attribute;
 	
@@ -18,7 +18,7 @@ public class AsheChampion extends Champion{
 		attribute.addEnchantment(Enchantment.ARROW_INFINITE, 1);
 	}
 	
-	public AsheChampion() {
+	public ChampionAshe() {
 		super("ashe", CharacterType.Marksman);
 		
 		addSkill(new FrostShotAbility());
