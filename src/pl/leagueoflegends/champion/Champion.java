@@ -18,11 +18,13 @@ public abstract class Champion {
 	private int maxMana;
 	private List<Ability> skills = new ArrayList<Ability>();
 	
-	public Champion(String id, CharacterType type, int maxLive){
+	public Champion(String id, CharacterType type, int maxLive, int maxMana){
 		this.id = id;
 		this.type = type;
 		this.maxLive = maxLive;
 		this.live = maxLive;
+		this.maxMana = maxMana;
+		this.mana = maxMana;
 	}
 
 	public String getId(){
