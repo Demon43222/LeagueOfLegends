@@ -19,7 +19,7 @@ public class ChampionAshe extends Champion{
 	}
 	
 	public ChampionAshe() {
-		super("ashe", CharacterType.Marksman);
+		super("ashe", CharacterType.Marksman, 1000);
 		
 		addSkill(new FrostShotAbility());
 		addSkill(new VolleyAbility());
@@ -30,6 +30,12 @@ public class ChampionAshe extends Champion{
 	@Override
 	public ItemStack getAttribute() {
 		return attribute;
+	}
+
+	@Override
+	public void onDeath() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
