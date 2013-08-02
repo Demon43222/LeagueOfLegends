@@ -1,4 +1,4 @@
-package pl.leagueoflegends.characters;
+package pl.leagueoflegends.champion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.bukkit.inventory.ItemStack;
 
 import pl.leagueoflegends.skills.Skill;
 
-public abstract class Character {
+public abstract class Champion {
 	
 	private List<Skill> skills = new ArrayList<Skill>();
 	
