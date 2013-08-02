@@ -1,4 +1,3 @@
-
 /lol join <arena> |P|
 
 	Permission:
@@ -115,4 +114,65 @@
 		lol.admin.enable
 		lol.admin.enable.<arena>
  
- 
+/lol arena info <arena>
+
+	Permission:
+		lol.*
+		lol.admin
+		lol.user.*
+		lol.user.arenainfo
+		
+/lol arena stop <arena>
+
+	Permission:
+		lol.*
+		lol.admin
+		lol.admin.stop
+		lol.admin.stop.<arena>
+
+/lol arena restart <arena>
+
+	Permission:
+		lol.*
+	 	lol.admin
+	 	lol.admin.restart
+	 	lol.admin.restart.<arena>
+	 	
+/lol reload
+
+	Permission:
+	lol.*
+	lol.admin.reload
+	
+/lol disable
+
+	Opis: Plugin zostaje wyłączony.
+	
+	Permission:
+		lol.*
+
+/lol teleport <arena>
+
+	Permission:
+		lol.*
+		lol.admin.tp
+		lol.admin.tp.<arena>
+		lol.admin
+		
+/lol arena select <arena>
+
+		Permission:
+		lol.*
+		lol.admin
+		lol.admin.select.<arena>
+
+/lol arena setlobby <team>
+
+		Permission:
+		lol.*
+		lol.admin
+		lol.admin.setlobby
+		
+
+	
+
