@@ -19,7 +19,7 @@ public class CmdLolSpectate extends RCommand {
 		Player p =	super.checkPlayer(s);
 
 		//TODO sprawdzic czy jest taka arena
-		super.checkPermissions(s, "lol.user.spectate."+args[0].toLowerCase());
+		super.checkPermissions(s, "lol.user.spectate."+args[0].toLowerCase(), "lol.admin");
 		
 		
 		
