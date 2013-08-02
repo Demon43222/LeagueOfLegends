@@ -24,3 +24,6 @@ help-admin:
 #list of subcommands aliases
 commands:
     admin: admin
+    join: join
+    leave: leave
+    spectate: spectate
