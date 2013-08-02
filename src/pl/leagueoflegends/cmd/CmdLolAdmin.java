@@ -28,5 +28,5 @@ public class CmdLolAdmin extends RCommand{
 				
 		return true;
 	}
-
+	
 }
