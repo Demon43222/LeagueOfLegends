@@ -16,15 +16,17 @@ public abstract class Champion {
 	private int maxLive;
 	private int mana;
 	private int maxMana;
+	private float speed;
 	private List<Ability> skills = new ArrayList<Ability>();
 	
-	public Champion(String id, CharacterType type, int maxLive, int maxMana){
+	public Champion(String id, CharacterType type, int maxLive, int maxMana, float speed){
 		this.id = id;
 		this.type = type;
 		this.maxLive = maxLive;
 		this.live = maxLive;
 		this.maxMana = maxMana;
 		this.mana = maxMana;
+		this.speed = speed;
 	}
 
 	public String getId(){
@@ -32,6 +34,9 @@ public abstract class Champion {
 	}
 	public int getLive(){
 		return live;
+	}
+	public float getSpeed(){
+		return speed;
 	}
 	public int getMaxLive(){
 		return maxLive;
@@ -66,6 +71,14 @@ public abstract class Champion {
 		mana += change;
 		if(mana < 0){
 			//nie ma wystarczajaco many
+			return false;
+		}
+		return true;
+	}
+	public boolean changeSpeed(float change){
+		speed += change;
+		if(speed < 0){
+			//nie moze byc ujemnej szybkosci
 			return false;
 		}
 		return true;

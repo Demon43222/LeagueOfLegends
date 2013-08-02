@@ -19,7 +19,7 @@ public class ChampionAshe extends Champion{
 	}
 	
 	public ChampionAshe() {
-		super("ashe", CharacterType.Marksman, 1000, 100);//TODO dodac poprawne dane
+		super("ashe", CharacterType.Marksman, 1000, 100, 1.0f);//TODO dodac poprawne dane
 		
 		addSkill(new FrostShotAbility());
 		addSkill(new VolleyAbility());
