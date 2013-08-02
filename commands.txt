@@ -36,11 +36,14 @@
     		lol.user.stat.other
     		lol.admin
 
-/lol stat reset <nick>
+/lol stat reset |P|
 
 	Permission:
-		lol.user.* - tylko dla siebie
-		lol.user.stat.reset - tylko dla siebie
+		lol.*
+		lol.user.*
+		lol.user.stat.*
+		lol.user.stat.reset
+		lol.admin
 
 
 /lol admin stat reset <nick>	
