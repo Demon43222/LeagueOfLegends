@@ -10,7 +10,7 @@ import pl.leagueoflegends.cmd.engine.RCommandException;
 
 public class CmdLolAdminKick extends RCommand {
 
-  public CmdLolAdminKick() {
+	public CmdLolAdminKick() {
 		super("kick");
 	}
 
@@ -22,6 +22,7 @@ public class CmdLolAdminKick extends RCommand {
 		
 		Player p = super.checkPlayer(s);
 		
+		super.checkArguments(args, 1, true, "/"+label+" <nick>");
 		
 		return true;
 	}
