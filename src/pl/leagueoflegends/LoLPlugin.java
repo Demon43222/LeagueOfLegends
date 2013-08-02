@@ -24,6 +24,7 @@ public class LoLPlugin extends JavaPlugin{
 		//config
 		Config.registerConfig("config", "config.yml", this);
 		Config.registerConfig("language", "languages.yml", this);
+		Config.registerConfig("skills", "skills.yml", this);
 		
 		//languages
 		Lang.loadMessages(Config.getConfig("language"));
