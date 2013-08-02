@@ -6,9 +6,9 @@ import pl.leagueoflegends.Config;
 
 public abstract class Ability {
 	
-	private String id;
+	private final String id;
 	private int level;
-	private int maxLevel;
+	private final int maxLevel;
 	private long lastUsed;
 	
 	public Ability(String id, int startLvl, int maxLvl){
