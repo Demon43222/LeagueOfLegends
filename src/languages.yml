@@ -16,6 +16,11 @@ help:
     - '&6-----------------------------------------------------'
     - '&6/lol &a- glowna koemnda pluginu'
     - '&6-----------------------------------------------------'
+#message that will be displayed after typing main admin command with incorrect subcommand
+help-admin:
+    - '&6--ADMIN----------------------------------------------'
+    - '&6/lol admin&a- glowna administracyjna koemnda pluginu'
+    - '&6-----------------------------------------------------'
 #list of subcommands aliases
 commands:
     admin: admin
