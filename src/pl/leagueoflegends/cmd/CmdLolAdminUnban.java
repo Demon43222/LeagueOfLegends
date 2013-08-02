@@ -9,7 +9,7 @@ public class CmdLolAdminUnban extends RCommand{
 
   
 	public CmdLolAdminUnban(){
-		super("unban");
+		super("unbannnnn");
 	}
 
 	@Override
