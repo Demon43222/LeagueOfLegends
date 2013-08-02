@@ -19,7 +19,7 @@ public class CmdLolJoin extends RCommand {
 		Player p =	super.checkPlayer(s);
 		
 		//TODO sprawdzic czy jest taka arena
-		super.checkPermissions(s, "lol.user.join."+args[0].toLowerCase());
+		super.checkPermissions(s, "lol.user.join."+args[0].toLowerCase(), "lol.admin");
 		
 		//TODO uzupelnic
 		
