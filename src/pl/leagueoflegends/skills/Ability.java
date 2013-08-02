@@ -36,10 +36,10 @@ public abstract class Ability {
 		return lastUsed;
 	}
 	public String getName(){
-		return Config.getConfig("skills").getString("skills."+id+".name", id);
+		return Config.getConfig("skills").getString(id+".name", id);
 	}
 	public String getDescription(){
-		return Config.getConfig("skills").getString("skills.volley.description", "");
+		return Config.getConfig("skills").getString(id+".description", "");
 	}
 	
 	
