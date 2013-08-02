@@ -17,4 +17,9 @@ public class FrostShotAbility extends Ability{
 		return getLevel()!=0;
 	}
 
+	@Override
+	public int getManaCost() {
+		return 0;
+	}
+
 }

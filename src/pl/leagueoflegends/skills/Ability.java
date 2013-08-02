@@ -45,6 +45,7 @@ public abstract class Ability {
 	
 	// ABSTRACT //
 	public abstract int getCooldown();		// in secounds
+	public abstract int getManaCost();
 	public abstract boolean isActive();
 	
 	

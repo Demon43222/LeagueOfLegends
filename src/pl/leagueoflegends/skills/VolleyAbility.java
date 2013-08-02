@@ -19,4 +19,9 @@ public class VolleyAbility extends Ability {
 		return getLevel()!=0 && checkDelay(getLastUsetTime(), getCooldown());
 	}
 
+	@Override
+	public int getManaCost() {
+		return 60;
+	}
+
 }
