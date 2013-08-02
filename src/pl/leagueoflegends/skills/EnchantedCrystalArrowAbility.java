@@ -2,27 +2,25 @@ package pl.leagueoflegends.skills;
 
 public class EnchantedCrystalArrowAbility extends Ability {
 
-	public EnchantedCrystalArrowAbility(String id, int startLvl, int maxLvl) {
-		super(id, startLvl, maxLvl);
-		// TODO Auto-generated constructor stub
+	private static final int[] cooldown = new int[]{0, 100, 90, 80};
+	
+	public EnchantedCrystalArrowAbility() {
+		super("enchantedCrystalArrow", 0, 3);
 	}
 
 	@Override
 	public int getCooldown() {
-		// TODO Auto-generated method stub
-		return 0;
+		return cooldown[getLevel()];
 	}
 
 	@Override
 	public int getManaCost() {
-		// TODO Auto-generated method stub
-		return 0;
+		return 150;
 	}
 
 	@Override
 	public boolean isActive() {
-		// TODO Auto-generated method stub
-		return false;
+		return getLevel()!=0 && checkDelay(getLastUsetTime(), getCooldown());
 	}
 
 }
