@@ -1,7 +1,6 @@
-skills:
-    volley:
-        name: Volley
-        description: ACTIVE: Ashe fires 7 arrows in a 57.5º cone, dealing physical damage to each target hit. Each arrow will only hit one enemy, and each enemy will only be hit by one arrow. Volley also applies the current rank of Frost Shot, regardless of whether it is toggled on or not.
-    frostShot:
+volley:
+    name: Volley
+    description: ACTIVE: Ashe fires 7 arrows in a 57.5º cone, dealing physical damage to each target hit. Each arrow will only hit one enemy, and each enemy will only be hit by one arrow. Volley also applies the current rank of Frost Shot, regardless of whether it is toggled on or not.
+frostShot:
         name: Frost Shot
         description: TOGGLE: Ashe enchants her basic attacks with ice, slowing her targets for 2 seconds.
