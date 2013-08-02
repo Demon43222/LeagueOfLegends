@@ -36,10 +36,10 @@ public abstract class Skill {
 		return lastUsed;
 	}
 	public String getName(){
-		return Config.getConfig("language").getString("skills."+id+".name", id);
+		return Config.getConfig("skills").getString("skills."+id+".name", id);
 	}
 	public String getDescription(){
-		return Config.getConfig("language").getString("skills.volley.description", "");
+		return Config.getConfig("skills").getString("skills.volley.description", "");
 	}
 	
 	
