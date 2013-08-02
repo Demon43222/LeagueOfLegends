@@ -1,4 +1,5 @@
 
+
 /lol join <arena>
 
 	Permission:
@@ -45,6 +46,7 @@
 
 	Permission:
 		lol.admin
+		lol.admin.stat
 		lol.*
 
 /lol admin building 
@@ -61,6 +63,7 @@
 		lol.*
 		lol.admin
 		lol.admin.kick
+		lol.admin.kick.<arena>
 	
 /lol admin ban <nick> <arena>  ( bez arena na wszytskich)
 
