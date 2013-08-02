@@ -48,6 +48,7 @@ public abstract class Champion {
 	// ENUM //
 	enum CharacterType{
 		Tank,
-		Support;
+		Support,
+		Marksman;
 	}
 }
