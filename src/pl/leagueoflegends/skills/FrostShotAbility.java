@@ -19,7 +19,7 @@ public class FrostShotAbility extends Ability{ //TODO to jest testowe, bedzie mo
 
 	@Override
 	public int getManaCost() {
-		return 0;
+		return 8;
 	}
 
 }
