@@ -1,5 +1,4 @@
 
-
 /lol join <arena>
 
 	Permission:
@@ -30,10 +29,10 @@
 /lol stat <user>
      
 	Permission:
-    	lol.user.stat
-    	lol.user.*
-    	lol.admin
-    	lol.*
+    		lol.user.stat
+    		lol.user.*
+    		lol.admin
+    		lol.*
 
 /lol stat reset <nick>
 
@@ -53,8 +52,8 @@
     opis: Budowanie na terenie aren
     
 	Permission:
-    	lol.*
-    	lol.admin.building
+    		lol.*
+    		lol.admin.building
  
 /lol admin kick <nick>
 
@@ -69,17 +68,17 @@
     
 	Permission:
    		lol.*
-    	lol.admin
-    	lol.admin.ban
-    	lol.admin.ban.<arena>
+    		lol.admin
+    		lol.admin.ban
+    		lol.admin.ban.<arena>
    
 /lol admin unban <nick> <arena>
    
 	Permission:
-     	lol.*
-     	lol.admin
-     	lol.admin.unban
-     	lol.admin.unban.<arena>
+     		lol.*
+     		lol.admin
+     		lol.admin.unban
+     		lol.admin.unban.<arena>
 
  /lol admin create <arena>
  
