@@ -4,27 +4,26 @@ Użytkownik:
 
   Permission:
   		lol.user.*
-  		lol.join.*
-  		lol.join.nrareny
+  		lol.user.join.*
+  		lol.user.join.<arena>
   		lol.*
-  		lol.admin
   
 /lol leave
 
 	Permission:
 		lol.user.*
-		lol.leave
+		lol.user.leave
 		lol.*
-		lo.admin
 		
-/lol spectate nrareny
+/lol spectate <arena>
 
 	opis:
 		Jest nie widoczny dla grających na arenie, może latać i patrzeć.
 	Permission:
+  		lol.user.*
 		lol.user.spectate
+		lol.user.spectate.<arena>
 		lol.*
-		lol.admin
 
 /lol stat <user>
      
