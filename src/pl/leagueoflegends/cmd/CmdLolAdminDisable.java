@@ -18,7 +18,8 @@ public class CmdLolAdminDisable extends RCommand{
 			throws RCommandException {
 		super.checkPermissions(s, "lol.admin.disable");
 		super.checkArguments(args, 2, false, "/"+label+" <arena>");
-		
+		String arena = args[0].toLowerCase();
+		//TODO jezeli istnieje arena, zablokuj ja
 		return true;
 	}
 }
