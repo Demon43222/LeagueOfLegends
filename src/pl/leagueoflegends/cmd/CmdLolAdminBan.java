@@ -15,11 +15,17 @@ public class CmdLolAdminBan extends RCommand{
 	@Override
 	public boolean execute(CommandSender s, String label, String[] args)
 			throws RCommandException {
-	super.checkPermissions(s, "lol.admin.ban");
-	super.checkArguments(args, 1, true, "/"+label+" <nick>");
-  //TODO 
-	super.checkArguments(args, 2, true, "/"+label+" <nick> + <arena>");
-  //TODO
+	super.checkPermissions(s, "lol.admin.ban", "lol.admin.ban" + args[0].toLowerCase());
+	super.checkArguments(args, 3, false, "/"+label+" <nick>");
+	if(args[1] != null ){
+	//TODO ban na 1 arene	
+		
+		
+	}else{
+		//TODO ban na wszytskie areny
+	}
+   
+
 		return true;
 	}
 }
