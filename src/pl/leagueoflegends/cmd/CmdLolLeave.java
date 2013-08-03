@@ -15,7 +15,7 @@ public class CmdLolLeave extends RCommand {
 
 	@Override
 	public boolean execute(CommandSender s, String label, String[] args) throws RCommandException {
-					super.checkPermissions(s, "lol.user.leave", "lol.admin");
+					super.checkPermissions(s, "lol.player.leave", "lol.admin");
 		Player p =	super.checkPlayer(s);
 		
 		//TODO uzupelnic
