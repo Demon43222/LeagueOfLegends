@@ -15,10 +15,11 @@ public class CmdLolAdminDelete extends RCommand{
 	@Override
 	public boolean execute(CommandSender s, String label, String[] args)
 			throws RCommandException {
-		Player p = super.checkPlayer(s);
 		super.checkPermissions(s, "lol.admin.delete");
+		Player p = super.checkPlayer(s);
 		super.checkArguments(args, 2, false, "/"+label+" <arena>");
-		
+		String arena = args[0].toLowerCase();
+		//TODO jezeli istnieje arena, usun ja
 		return true;
 	}
 
