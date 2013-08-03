@@ -127,8 +127,8 @@
 	Permission:
 		lol.*
 		lol.admin
-		lol.admin.stop
-		lol.admin.stop.<arena>
+		lol.admin.forcestop
+		lol.admin.forcestop.<arena>
 
 /lol arena restart <arena>
 
