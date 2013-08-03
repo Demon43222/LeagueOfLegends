@@ -15,10 +15,11 @@ public class CmdLolArenaSetlobby extends RCommand {
 	@Override
 	public boolean execute(CommandSender s, String label, String[] args)
 			throws RCommandException {
-		super.checkArguments(args, 1, false, "/"+label);
+		super.checkArguments(args, 2, false, "/"+label+" <team>");
 		//TODO czy zaznaczyl arene
 		super.checkPermissions(s, "lol.admin.setlobby");
 		Player p = super.checkPlayer(s);
+		
 		//TODO setlobby cmd
 		return true;
 	}
