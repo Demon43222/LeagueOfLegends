@@ -16,6 +16,7 @@ public class CmdLoLChampions extends RCommand {
 			throws RCommandException {
 		super.checkPermissions(s, "lol.player.champions");
 		
+		//TODO champions list
 		return true;
 	}
 
