@@ -9,7 +9,7 @@ import pl.leagueoflegends.cmd.engine.RCommandException;
 public class CmdLolAdminDelete extends RCommand{
 
 	public CmdLolAdminDelete() {
-		super("delete");
+		super("deleteeeeee");
 	}
 
 	@Override
