@@ -16,8 +16,10 @@ public class CmdLolAdminForcestop extends RCommand{
 			throws RCommandException {
 		super.checkArguments(args, 2, false, "/"+label+" <arena>");
 		super.checkPermissions(s, "lol.admin.forcestop", "lol.admin.forcestop." + args[0].toLowerCase());
+		String arena = args[0].toLowerCase();
 		
 		
+		//TODO forcestopcmd
 		return true;
 	}
 

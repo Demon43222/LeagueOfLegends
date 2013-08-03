@@ -18,13 +18,15 @@ public class CmdLolAdminKick extends RCommand {
 	public boolean execute(CommandSender s, String label, String[] args)
 			throws RCommandException {
 		
+		super.checkArguments(args, 3, false, "/"+label+" <nick> <arena>");
 		super.checkPermissions(s, "lol.admin.kick");
+		String arena = args[1].toLowerCase();
+		String nick = args[0].toLowerCase();
+			
+		//TODO kickcmd
 		
 
-		
-		super.checkArguments(args, 1, true, "/"+label+" <nick>");
 		
 		return true;
 	}
-
 }

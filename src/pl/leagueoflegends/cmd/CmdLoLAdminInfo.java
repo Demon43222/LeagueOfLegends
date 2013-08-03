@@ -19,7 +19,9 @@ public class CmdLoLAdminInfo extends RCommand{
 		super.checkArguments(args, 2, false, "/"+label+" <arena>");
 		Player p = super.checkPlayer(s);
 		super.checkPermissions(s, "lol.admin.info", "lol.admin.info." + args[0].toLowerCase());
+		String arena = args[0].toLowerCase();
 		
+				
 		return true;
 	}
 }
