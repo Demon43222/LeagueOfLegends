@@ -15,8 +15,8 @@ public class cmdLolAdmnCreate extends RCommand{
 	@Override
 	public boolean execute(CommandSender s, String label, String[] args)
 			throws RCommandException {
-	super.checkPermissions(s, "lol.admin.create");
 	super.checkArguments(args, 2, false, "/"+label+" <nick>");
+	super.checkPermissions(s, "lol.admin.create");
 	String arena = args[0];
 	
   //TODO arenacreate
