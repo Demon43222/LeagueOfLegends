@@ -16,6 +16,8 @@ public class CmdLolAdminRestart extends RCommand{
 			throws RCommandException {
 		super.checkArguments(args, 2, false, "/"+label+" <arena>");
 		super.checkPermissions(s, "lol.admin.restart", "lol.admin.restart." + args[0].toLowerCase());
+		//TODO restartcmd
+		
 		
 		return true;
 	}
