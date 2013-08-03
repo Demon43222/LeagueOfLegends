@@ -15,9 +15,15 @@ public class CmdLolAdminUnban extends RCommand{
 	@Override
 	public boolean execute(CommandSender s, String label, String[] args)
 			throws RCommandException {
+		
+	super.checkArguments(args, 3, false, "/"+label+" <nick> <arena>");
 	super.checkPermissions(s, "lol.admin.unban");
-	super.checkArguments(args, 1, true, "/"+label+" <nick>");
-  //TODO ub
+	if(args[1] != null){
+		//TODO ubcmd dla danej areny
+	}else{
+		//TODO ubcmd dla wszystkich aren
+	}
+	
 		return true;
 	}
 }
