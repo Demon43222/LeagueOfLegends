@@ -14,7 +14,7 @@ public class CmdLoLChampions extends RCommand {
 	@Override
 	public boolean execute(CommandSender s, String label, String[] args)
 			throws RCommandException {
-		super.checkPermissions(s, "lol.player.champions");
+		super.checkPermissions(s, "lol.player.champions", "lol.admin.champions");
 		
 		//TODO champions list
 		return true;
