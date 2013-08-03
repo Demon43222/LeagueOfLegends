@@ -16,7 +16,8 @@ public class CmdLoLAdminEnable extends RCommand {
 	public boolean execute(CommandSender s, String label, String[] args)
 			throws RCommandException {
 		super.checkArguments(args, 2, false, "/"+label+" <arena>");
-		
+		String arena =args[0].toLowerCase();
+		//TODO czy istnieje arena,jezeli jest zablokowana. Jak tak odblokuj ja.
 		return true;
 	}
 }
