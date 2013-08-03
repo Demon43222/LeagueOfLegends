@@ -18,7 +18,7 @@ public class CmdLolStat extends RCommand {
 	public boolean execute(CommandSender s, String label, String[] args) throws RCommandException {
 		String nick;
 		if(args != null && args.length != 0){
-			super.checkPermissions(s, "lol.user.player.other", "lol.admin");
+			super.checkPermissions(s, "lol.player.other", "lol.admin");
 			nick = args[0].toLowerCase();
 		}else{
 			Player p = super.checkPlayer(s);
