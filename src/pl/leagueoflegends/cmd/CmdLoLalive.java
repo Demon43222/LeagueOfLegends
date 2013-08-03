@@ -14,7 +14,7 @@ public class CmdLoLalive extends RCommand {
 	@Override
 	public boolean execute(CommandSender s, String label, String[] args)
 			throws RCommandException {
-		super.checkPermissions(s, "lol.user.alive");
+		super.checkPermissions(s, "lol.player.alive");
 		//TODO czy jest na arenie
 		//TODO alivecmd
 		
