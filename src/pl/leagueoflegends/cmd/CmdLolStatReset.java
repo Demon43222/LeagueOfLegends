@@ -15,7 +15,7 @@ public class CmdLolStatReset extends RCommand {
 
 	@Override
 	public boolean execute(CommandSender s, String label, String[] args) throws RCommandException {
-					super.checkPermissions(s, "lol.user.stat.reset", "lol.admin");
+					super.checkPermissions(s, "lol.player.stat.reset", "lol.admin");
 		Player p =	super.checkPlayer(s);
 		
 		//TODO uzupelnic
