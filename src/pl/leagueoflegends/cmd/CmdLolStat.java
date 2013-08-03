@@ -18,14 +18,14 @@ public class CmdLolStat extends RCommand {
 	public boolean execute(CommandSender s, String label, String[] args) throws RCommandException {
 		String nick;
 		if(args != null && args.length != 0){
-			super.checkPermissions(s, "lol.user.stat.other", "lol.admin");
+			super.checkPermissions(s, "lol.user.player.other", "lol.admin");
 			nick = args[0].toLowerCase();
 		}else{
 			Player p = super.checkPlayer(s);
-			super.checkPermissions(s, "lol.user.stat", "lol.admin");
+			super.checkPermissions(s, "lol.player.stat", "lol.admin");
 			nick = p.getName().toLowerCase();
 		}
-		
+		//TODO stat cmd
 		
 		return false;
 	}
