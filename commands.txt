@@ -224,8 +224,8 @@
 	Permission:
 		lol.*
 		lol.admin
-		lol.user.*
-		lol.user.alive
+		lol.player.*
+		lol.player.alive
 		
 /lol chat 
 
@@ -234,16 +234,16 @@
 	Permission:
 		lol.*
 		lol.admin
-		lol.user.*
-		lol.user.chattoogle
+		lol.player.*
+		lol.player.chattoogle
 		
 /lol version
 
 	Permission:
 		lol.*
 		lol.admin
-		lol.user.*
-		lol.user.version
+		lol.player.*
+		lol.player.version
 		
 /lol shop
 
