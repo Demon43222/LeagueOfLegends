@@ -5,7 +5,7 @@ public class BouncingBomb extends Ability {
 	private static final int[] cooldown = new int[]{0, 6, 5, 4};
 	
 	public BouncingBomb() {
-		super("bouncingBomb", 0, 3);
+		super("bouncingBomb", 0, 5);
 	}
 
 	@Override
