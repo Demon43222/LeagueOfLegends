@@ -4,7 +4,7 @@ public class SatchelCharge extends Ability {
 
   private static final int[] cooldown = new int[]{26, 24, 22, 20, 18};
 	
-	public BouncingBomb() {
+	public SatchelCharge() {
 		super("bouncingBomb", 0, 5);
 	}
 
