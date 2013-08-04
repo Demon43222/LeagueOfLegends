@@ -2,7 +2,7 @@ package pl.leagueoflegends.skills;
 
 public class HexplosiveMinefield extends Ability {
 
-  private static final int[] mana = new int[]{70, 80, 90, 100, 110};
+  private static final int[] mana = new int[]{0, 70, 80, 90, 100, 110};
 	
 	public HexplosiveMinefield() {
 		super("hexplosiveMinefield", 0, 5);
