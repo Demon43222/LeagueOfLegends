@@ -4,8 +4,6 @@ public class Tumble extends Ability {
 
 	private static final int[] cooldown = new int[]{0, 6, 5, 4, 3, 2};
 
-	private static int[] mana = new int[] {50, 60, 70, 80, 90};
-
 	public BouncingBomb() {
 		super("bouncingBomb", 0, 5);
 	}
