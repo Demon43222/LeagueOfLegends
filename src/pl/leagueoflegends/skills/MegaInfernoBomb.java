@@ -4,7 +4,7 @@ public class MegaInfernoBomb extends Ability {
 
   private static final int[] cooldown = new int[]{0, 120, 105, 90};
 
-	public EnchantedCrystalArrowAbility() {
+	public MegaInfernoBomb() {
 		super("megaInfernoBomb", 0, 3);
 	}
 
