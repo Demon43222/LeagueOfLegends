@@ -13,10 +13,10 @@ public class ChampionZiggs extends Champion{
 	private final static ItemStack attribute;
 	
 	static{
-		attribute = new ItemStack(Material.SNOWBALL, 1);
+		attribute = new ItemStack(Material.SNOW_BALL, 1);
 	}
 	
-	public ChampionAshe() {
+	public ChampionZiggs() {
 		super("ziggs", "Ziggs", CharacterType.Marksman, 1000, 100, 1.0f);//TODO dodac poprawne dane
 		
 		addSkill(new BouncingBomb());
