@@ -2,9 +2,9 @@ package pl.leagueoflegends.skills;
 
 public class BouncingBomb extends Ability {
 
-	private static final int[] cooldown = new int[]{0, 6, 5, 4};
+	private static final int[] cooldown = new int[]{0, 8, 6, 5, 4, 3};
 	
-	private static int[] mana = new int[] {50, 60, 70, 80, 90};
+	private static int[] mana = new int[] {0, 50, 60, 70, 80, 90};
 	
 	public BouncingBomb() {
 		super("bouncingBomb", 0, 5);
