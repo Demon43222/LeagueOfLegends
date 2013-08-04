@@ -15,8 +15,8 @@ public class HexplosiveMinefield extends Ability {
 
 	@Override
 	public int getManaCost() {
-		return 90;
-	}
+		return mana[getLevel()];
+	
 
 	@Override
 	public boolean isActive() {
