@@ -22,5 +22,4 @@ public class BloodBoil extends Ability {
 	public boolean isActive() {
 		return getLevel()!=0 && checkDelay(getLastUsetTime(), getCooldown());
 	}
-
 }
