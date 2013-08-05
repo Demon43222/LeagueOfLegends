@@ -4,7 +4,7 @@ public class Condemn extends Ability {
 
   private static final int[] cooldown = new int[]{0, 20, 18, 16, 14, 12};
 
-	public SatchelCharge() {
+	public Condemn() {
 		super("condemn", 0, 5);
 	}
 
