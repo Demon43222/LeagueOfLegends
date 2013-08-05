@@ -4,7 +4,7 @@ public class IceBlast extends Ability {
 
 // Nunu "e"
 
-	public static final int[] = mana(0, 75, 85, 95, 105, 115);
+	public static final int[] mana = new int[] {0, 75, 85, 95, 105, 115};
 
 	public IceBlast() {
 		super("iceBlast", 0, 5);
@@ -17,7 +17,7 @@ public class IceBlast extends Ability {
 
 	@Override
 	public int getManaCost() {
-		return mana(getLevel());
+		return mana[getLevel()];
 	}
 
 	@Override
