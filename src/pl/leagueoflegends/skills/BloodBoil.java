@@ -1,6 +1,8 @@
 package pl.leagueoflegends.skills;
 
 public class BloodBoil extends Ability {
+	
+// Nunu "w"
 
 	public BloodBoil() {
 		super("bloodBoil", 0, 5);
