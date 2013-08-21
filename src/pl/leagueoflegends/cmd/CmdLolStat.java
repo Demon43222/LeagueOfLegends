@@ -18,12 +18,23 @@ public class CmdLolStat extends RCommand {
 	public boolean execute(CommandSender s, String label, String[] args) throws RCommandException {
 		String nick;
 		if(args != null && args.length != 0){
+			/*
+			 * Moıe doda by: jeıeli ktoæ wpisze w args[0] sw—j nick to teı dzia¸a?
+			 * if(args[0].equalsIgnoreCase(nick)){
+			 *
+			 *   }else{
+			 *   Robi to co jest
+			 *   }
+			 */
+			
 			super.checkPermissions(s, "lol.player.stat.other", "lol.admin");
 			nick = args[0].toLowerCase();
+			
 		}else{
 			Player p = super.checkPlayer(s);
 			super.checkPermissions(s, "lol.player.stat", "lol.admin");
 			nick = p.getName().toLowerCase();
+			
 		}
 		//TODO stat cmd
 		
