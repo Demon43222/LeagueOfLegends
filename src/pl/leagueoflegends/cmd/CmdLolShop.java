@@ -46,11 +46,9 @@ public class CmdLolShop extends RCommand{
 		super.checkPermissions(s, "lol.player.shop");
 		Player p = super.checkPlayer(s);
 		
-		String nick = p.getName().toLowerCase();
+		
          if(!(args == null)){
-        	 if(! (args.equals(nick))){
-        		 //TODO shop cmd - zakup dla innego gracza( taki prezent)
-        	 }
+        	 
          }
 		//TODO shop cmd
 		
