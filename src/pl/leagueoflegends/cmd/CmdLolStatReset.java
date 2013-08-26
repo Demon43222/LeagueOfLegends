@@ -18,7 +18,9 @@ public class CmdLolStatReset extends RCommand {
 					super.checkPermissions(s, "lol.player.stat.reset", "lol.admin");
 		Player p =	super.checkPlayer(s);
 		
-		//TODO uzupelnic
+		super.checkArguments(args, 1, true, "/"+label);
+		
+		//TODO stat reset cmd
 		
 		return true;
 	}
