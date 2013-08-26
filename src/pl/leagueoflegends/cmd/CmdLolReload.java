@@ -14,7 +14,7 @@ public class CmdLolReload extends RCommand {
 	@Override
 	public boolean execute(CommandSender s, String label, String[] args)
 			throws RCommandException {
-		super.checkPermissions(s, "lol.adminreload");
+		super.checkPermissions(s, "lol.admin.reload");
 		//TODO cmdreload
 		
 		return true;
